@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Copia_practica_2.Modelos;
 
-namespace Copia_practica_2
+namespace Copia_practica_2.CreaciónAutos
 {
     class CCrearCamioneta
     {
-                private static CCamioneta _camioneta = new();
+        private static CCamioneta _camioneta = new();
 
         // Creación de la lista de camionetas
         private static List<CCamioneta> _ListaCamionetas = new List<CCamioneta>();
@@ -94,5 +95,5 @@ namespace Copia_practica_2
 
 
     }
-    }
+}
 }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Copia_practica_2
+namespace Copia_practica_2.Modelos
 {
-    class CCamioneta
+    class CDeportivo
     {
         public string Nombre { get; set; }
         public double Precio { get; set; }
@@ -15,7 +15,8 @@ namespace Copia_practica_2
         public int Pasajeros { get; set; }
         public string Transmision { get; set; }
         public string Traccion { get; set; }
-        public CCamioneta() { }
+
+        public CDeportivo() { }
 
         public override string ToString()
         {

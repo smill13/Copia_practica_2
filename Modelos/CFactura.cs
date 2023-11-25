@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Copia_practica_2
+namespace Copia_practica_2.Modelos
 {
     class CFactura
     {
@@ -20,7 +20,7 @@ namespace Copia_practica_2
 
             Impuesto = Precio * 0.10;
             Total = Impuesto + Precio;
-            return $"\n\nFecha de creación: {FechaCustomisada}\nImpuestos: {CFactura.Impuesto}\nTotal: {CFactura.Total}";
+            return $"\n\nFecha de creación: {FechaCustomisada}\nImpuestos: {Impuesto}\nTotal: {Total}";
         }
     }
 }

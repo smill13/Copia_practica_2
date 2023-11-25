@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Copia_practica_2.Modelos;
 
-namespace Copia_practica_2
+namespace Copia_practica_2.CreaciónAutos
 {
     class CCrearSedan
     {
