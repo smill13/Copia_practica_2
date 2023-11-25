@@ -7,7 +7,7 @@ using Copia_practica_2.Modelos;
 
 namespace Copia_practica_2.CreaciónAutos
 {
-    class CCrearCamioneta
+    class CCrearCamioneta : IVehiculos
     {
         private static CCamioneta _camioneta = new();
 
@@ -95,5 +95,4 @@ namespace Copia_practica_2.CreaciónAutos
 
 
     }
-}
 }

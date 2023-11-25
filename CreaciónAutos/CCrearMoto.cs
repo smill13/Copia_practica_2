@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Copia_practica_2.CreaciónAutos
 {
-    class CCrearMoto
+    class CCrearMoto : IVehiculos
     {
 
         //creacion Lista 

@@ -7,7 +7,7 @@ using Copia_practica_2.Modelos;
 
 namespace Copia_practica_2.CreaciónAutos
 {
-    class CCrearDeportivo
+    class CCrearDeportivo : IVehiculos
     {
         private static CDeportivo _deportivo = new();
 

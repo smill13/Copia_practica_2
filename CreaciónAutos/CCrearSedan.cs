@@ -7,7 +7,7 @@ using Copia_practica_2.Modelos;
 
 namespace Copia_practica_2.CreaciónAutos
 {
-    class CCrearSedan
+    class CCrearSedan : IVehiculos
     {
         //creacion Lista 
         private static HashSet<CSedan> _ListaSedan = new HashSet<CSedan>();

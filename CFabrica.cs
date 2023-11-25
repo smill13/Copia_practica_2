@@ -22,24 +22,24 @@ namespace Copia_practica_2
             if (opcion == 1)
             {
                 sedanIntance ??= new CCrearSedan();
-                return (IVehiculos)sedanIntance;
+                return sedanIntance;
 
             }
             else if (opcion == 2)
             {
                 motoIntace ??= new CCrearMoto();
-                return (IVehiculos)motoIntace;
+                return motoIntace;
 
             }
             else if (opcion == 3)
             {
                 deportivoIntace ??= new CCrearDeportivo();
-                return (IVehiculos)deportivoIntace;
+                return deportivoIntace;
             }
             else if (opcion == 4)
             {
                 camionetaInstance ??= new CCrearCamioneta();
-                return (IVehiculos)camionetaInstance;
+                return camionetaInstance;
             }
             else
             {
