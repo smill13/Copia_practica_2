@@ -18,34 +18,38 @@ namespace Copia_practica_2
 
         public static IVehiculos GetVehiculos(int opcion)
         {
+            try
+            {
+                if (opcion == 1)
+                {
+                    sedanIntance ??= new CCrearSedan();
+                    return sedanIntance;
 
-            if (opcion == 1)
-            {
-                sedanIntance ??= new CCrearSedan();
-                return sedanIntance;
+                }
+                else if (opcion == 2)
+                {
+                    motoIntace ??= new CCrearMoto();
+                    return motoIntace;
 
+                }
+                else if (opcion == 3)
+                {
+                    deportivoIntace ??= new CCrearDeportivo();
+                    return deportivoIntace;
+                }
+                else if (opcion == 4)
+                {
+                    camionetaInstance ??= new CCrearCamioneta();
+                    return camionetaInstance;
+                }
+                else { throw new Exception("Opción no válida."); }
             }
-            else if (opcion == 2)
+            catch (Exception ex)
             {
-                motoIntace ??= new CCrearMoto();
-                return motoIntace;
-
-            }
-            else if (opcion == 3)
-            {
-                deportivoIntace ??= new CCrearDeportivo();
-                return deportivoIntace;
-            }
-            else if (opcion == 4)
-            {
-                camionetaInstance ??= new CCrearCamioneta();
-                return camionetaInstance;
-            }
-            else
-            {
-                Console.WriteLine("La opción debe estar dentro del menú");
+                Console.WriteLine(ex.Message);
                 return null;
             }
         }
     }
+
 }
