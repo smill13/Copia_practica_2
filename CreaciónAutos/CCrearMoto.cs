@@ -75,6 +75,7 @@ namespace Copia_practica_2.CreaciónAutos
             }
 
             Console.Write("Seleccione una moto: ");
+
             int opcion = Convert.ToInt32(Console.ReadLine());
             Console.Clear();
 
@@ -88,6 +89,7 @@ namespace Copia_practica_2.CreaciónAutos
                 CCrearFactura Factura = new CCrearFactura();
                 Factura.CCrearFactura1(opcion, motoSeleccionada.ToString());
             }
+            
             else
             {
                 Console.WriteLine("\nOpción inválida. Intente nuevamente.");

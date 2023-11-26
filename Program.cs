@@ -1,5 +1,4 @@
 ﻿using Copia_practica_2;
-
 // Para visualizar mi menú
 bool encendido = true;
 
@@ -7,6 +6,7 @@ if (encendido)
 {
     while (encendido)
     {
+
         Console.Clear();
         Console.WriteLine("         ╔══════════════════════════════════════════════════╗");
         Console.WriteLine("         ║                                                  ║");
@@ -20,7 +20,14 @@ if (encendido)
         Console.WriteLine("         ║                                                  ║");
         Console.WriteLine("         ╠══════════════════════════════════════════════════╣");
         Console.Write("\nElija: ");
-        int opcion = int.Parse(Console.ReadLine());
+
+
+        int opcion;
+        while (!int.TryParse(Console.ReadLine(), out opcion))
+        {
+            Console.WriteLine("Por favor, introduce un número entero.");
+        }
+            
         Console.Clear();
 
         //completar el menú
@@ -37,9 +44,15 @@ if (encendido)
 
         IVehiculos auto = CFabrica.GetVehiculos(opcion); // llamada a la fábrica
 
-        auto.CrearAuto(); // implementación de la interfaz
+        if (auto != null)
+        {
+            auto.CrearAuto(); // implementación de la interfaz
+        }
+        else
+        {
+            Console.WriteLine("Por favor, elija una opción del menú.");
+            Console.ReadKey();
+        }
 
     }
 }
-
-
